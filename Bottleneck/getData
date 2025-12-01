@@ -1,0 +1,11 @@
+ 
+
+
+vcftools --vcf  GHIST_2025_bottleneck.final.vcf --keep names.txt  --recode --recode-INFO-all --out tttemp
+
+vcftools --vcf tttemp.recode.vcf --mac 1 --recode --recode-INFO-all --out temp2
+
+rm tttemp*
+
+
+vcftools --vcf temp2.recode.vcf  --recode --recode-INFO-all --out Final   --from-bp 1  --to-bp 10000000 --chr  1

@@ -1,0 +1,17 @@
+
+VCFtools - 0.1.15
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf temp2.recode.vcf
+	--chr 1
+	--to-bp 10000000
+	--recode-INFO-all
+	--out Final
+	--recode
+	--from-bp 1
+
+After filtering, kept 3 out of 3 Individuals
+Outputting VCF file...
+After filtering, kept 53990 out of a possible 535749 Sites
+Run Time = 1.00 seconds

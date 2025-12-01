@@ -1,0 +1,15 @@
+
+VCFtools - 0.1.15
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf GHIST_2025_singlesweep.21.testing.vcf
+	--max-alleles 1
+	--out oneallele
+	--recode
+
+After filtering, kept 25 out of 25 Individuals
+Outputting VCF file...
+After filtering, kept 0 out of a possible 149768 Sites
+No data left for analysis!
+Run Time = 1.00 seconds

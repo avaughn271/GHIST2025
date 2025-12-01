@@ -1,0 +1,16 @@
+
+VCFtools - 0.1.15
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf GHIST_2025_secondary_contact.final.vcf
+	--mac 1
+	--max-alleles 2
+	--min-alleles 2
+	--out biFinal
+	--recode
+
+After filtering, kept 35 out of 35 Individuals
+Outputting VCF file...
+After filtering, kept 5195515 out of a possible 5305895 Sites
+Run Time = 189.00 seconds

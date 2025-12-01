@@ -1,0 +1,60 @@
+A = readLines("GHIST_2025_bottleneck.final.vcf")
+head(A)
+linee = grep("CHROM", A)
+if (length(linee)  != 1) {print("PROBLEM")}
+
+A = A[(linee +1):length(A)]
+
+nonbiallelic = union(grep("\\|2", A), grep("2\\|", A))
+
+A = A[-nonbiallelic]
+
+f = function(x) {
+  temp = strsplit(x,"\t")[[1]]
+  stringg1 = "1" 
+  return(as.numeric(temp[2]))
+}
+
+g = function(x) {
+  temp = strsplit(x,"\t")[[1]]
+  stringg1 = "1" 
+  stringg2 = temp[2]
+  temp = paste0(temp[-c(1,2,3,4,5,6,7,8,9)])
+  tempstring = ""
+  for (i in temp) {
+    if (i == "0|0") {
+      tempstring = paste0(tempstring, "AA")
+    }
+    if (i == "1|1") {
+      tempstring = paste0(tempstring, "GG")
+    }
+    if (i == "1|0") {
+      tempstring = paste0(tempstring, "GA")
+    }
+    if (i == "0|1") {
+      tempstring = paste0(tempstring, "AG")
+    }
+  }
+  return(tempstring)
+  
+}
+
+bases = unname(sapply(A, f))
+chromess = rep("1", length(bases))
+gaps = c(1, bases[-1] - bases[-length(bases)])
+snps = unname(sapply(A, g))
+write.table(data.frame(chromess, bases, gaps, snps),   "OutputFinal.txt", 
+            sep = "\t", quote = F, row.names = F, col.names= F)
+
+
+
+A  = read.table("OutputFinal.txt")
+
+A[[4]]
+library(stringr)
+f =  unname(sapply(A[[4]],function(x) str_count(x, "G")  ))
+
+f = table(f)
+f = f[-c(1,length(f))]
+
+write.table(data.frame( f), "sfsFinal.csv" , sep= " ", quote = F, row.names = F, col.names = F )

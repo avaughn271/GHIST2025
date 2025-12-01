@@ -1,0 +1,16 @@
+
+ 
+ 
+
+./msmc2_macOS -t 6 -p 1*8+1*92 -o results/MSMCOutput_8 --rhoOverMu 1.07142857143   --fixedRecombination   -I 0,1  OutputFinalSHORT.txt & 
+./msmc2_macOS -t 6 -p 1*7+1*93 -o results/MSMCOutput_7 --rhoOverMu 1.07142857143   --fixedRecombination   -I 0,1  OutputFinalSHORT.txt & 
+./msmc2_macOS -t 6 -p 1*6+1*94 -o results/MSMCOutput_6 --rhoOverMu 1.07142857143   --fixedRecombination   -I 0,1  OutputFinalSHORT.txt & 
+./msmc2_macOS -t 6 -p 1*5+1*95 -o results/MSMCOutput_5 --rhoOverMu 1.07142857143   --fixedRecombination   -I 0,1  OutputFinalSHORT.txt & 
+./msmc2_macOS -t 6 -p 1*4+1*96 -o results/MSMCOutput_4 --rhoOverMu 1.07142857143   --fixedRecombination   -I 0,1  OutputFinalSHORT.txt & 
+./msmc2_macOS -t 6 -p 1*3+1*97 -o results/MSMCOutput_3 --rhoOverMu 1.07142857143   --fixedRecombination   -I 0,1  OutputFinalSHORT.txt & 
+./msmc2_macOS -t 6 -p 1*2+1*98 -o results/MSMCOutput_2 --rhoOverMu 1.07142857143   --fixedRecombination   -I 0,1  OutputFinalSHORT.txt & 
+./msmc2_macOS -t 6 -p 1*1+1*99 -o results/MSMCOutput_1 --rhoOverMu 1.07142857143   --fixedRecombination   -I 0,1  OutputFinalSHORT.txt 
+
+
+
+wait

@@ -1,0 +1,13 @@
+
+VCFtools - 0.1.15
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf filtered_no_singletons.recode.vcf
+	--freq
+	--out ../GHIST_2025_singlesweep.21.testing.vcf
+
+After filtering, kept 25 out of 25 Individuals
+Outputting Frequency Statistics...
+After filtering, kept 116280 out of a possible 116280 Sites
+Run Time = 1.00 seconds
