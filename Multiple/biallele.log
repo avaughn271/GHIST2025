@@ -1,0 +1,15 @@
+
+VCFtools - 0.1.15
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf GHIST_2025_multisweep.15.final.vcf
+	--max-alleles 2
+	--min-alleles 2
+	--out biallele
+	--recode
+
+After filtering, kept 25 out of 25 Individuals
+Outputting VCF file...
+After filtering, kept 277750 out of a possible 278114 Sites
+Run Time = 7.00 seconds

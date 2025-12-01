@@ -1,0 +1,13 @@
+
+VCFtools - 0.1.15
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf biallele.recode.vcf
+	--freq
+	--out output
+
+After filtering, kept 25 out of 25 Individuals
+Outputting Frequency Statistics...
+After filtering, kept 181083 out of a possible 181083 Sites
+Run Time = 1.00 seconds
